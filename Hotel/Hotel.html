@@ -1,0 +1,83 @@
+<html>
+<head>
+
+	<script>
+
+  /*Ao acessar o sistema, pergunte o nome do Hotel e diga "O nome do hotel é {Hotel}".
+Ao acessar o sistema, pergunte o nome do usuário e uma senha. O nome do usuário não precisa de validação. A senha deve ser 2678.  
+Na função "inicio", utilize escolha/caso (switch/case) para validar a opção escolhida pelo do usuário.
+Sempre que o usuário acessar o sistema, diga "Bem vindo ao Hotel {Hotel}, {Nome}. É um imenso prazer ter você por aqui!".
+Substituir a expressão {Hotel} pelo nome do hotel informado pelo usuário em todos os pontos do código.
+Substituir a expressão {Nome} pelo nome do usuário informado pelo usuário em todos os pontos do código.
+Sempre que o usuário sair do sistema, exiba a mensagem "Muito obrigado e até logo, {Nome}."
+Para cada escolha que o usuário fizer no menu principal, deve ser desenvolvido um programa seguindo as instruções abaixo. Esse programa deve ser criado utilizando uma função principal como chamada. Todo o restante é feito com sua liberdade.
+Atualize o menu de opções e a função inicio com todas as opções de programas abaixo. 
+Atualize a função "erro" com as novas opções do menu.
+Ao encerrar qualquer programa abaixo, sempre retorne ao menu inicia*/
+                let nhotel = prompt('Qual é o nome do Hotel?');{
+                alert('O nome do  hotel é ' + nhotel);
+				}
+				let person = prompt('Qual é o seu nome?');
+
+			pass();
+			      
+			     function pass(){
+					senha = 2678;
+					if (senha == parseInt(prompt('Digite a senha'))){
+					inicio();
+			       } else {
+					alert('Senha incorreta!')
+						pass();
+					}
+				}
+				
+		function inicio() {
+        let menu = alert('Bem vindo ao Hotel ' + nhotel + ", " + person + '. É um imenso prazer ter você por aqui!')
+                
+		let escolha = parseInt(prompt('Selecione uma opção 1.) Reserva de Quartos 2.) Cadastro de Hóspedes 3.) Abastecimento de Carros 4.) Sair'));
+				}
+			if (escolha === 1) {
+				reserva_quartos();
+			} else if (escolha === 2) {
+				cadastro_hospedes();
+			} else if (escolha === 3) {
+				abastecer_carros();
+			} else if (escolha === 4) {
+				sair();
+			} else {
+				erro();
+			}
+
+		function reserva_quartos() {
+			let diaria = parseInt(promt('Qual é o valor da diária?'));
+			inicio();
+		}
+		function abastecer_carros() {
+			alert('HOTEL {nhotel} - ABASTECER');
+			inicio();
+		}
+
+		function erro() {
+			alert('Por favor, informe um número entre 1 e 4');
+			inicio();
+		}
+
+		function sair() {
+			var confirma = confirm('Você deseja sair?');
+			if (confirma) {
+				window.close();
+				alert('Muito obrigado e até logo, {person}.');
+			} else {
+				inicio();
+			}
+		}
+		
+		inicio();
+	</script>
+</head>
+
+<body>
+
+</body>
+
+</html>
