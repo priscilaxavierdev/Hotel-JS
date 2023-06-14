@@ -1,5 +1,4 @@
-# Hotel-JS
-Um Hotel para Terabithia
+# Um Hotel para Terabithia
 ### Um sistema para os funcionários do hotel usarem
 Neste projeto foi usado os mesmos conceitos da atividade do banco, sendo só um pouco mais trabalhoso e mais completo. Porque se trata de um sistema para que os funcinários do Hotel façam o uso, cadastrem os hóspedes não só para as diárias como eventos também do local.
 
